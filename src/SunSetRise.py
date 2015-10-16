@@ -37,7 +37,7 @@ class SunSetRise:
         
         JsonResponse = json.dumps({'ort_info':[{'name':ort_name,'ort_lat':lat,'ort_lng':lng, 'sonnen_auf_untergang':SunSetRiseCalcs}]}, indent=3, sort_keys=True)
         
-        web.header('Access-Control-Allow-Origin', 'http://localhost')
+        web.header('Access-Control-Allow-Origin', '*')
         #web.header('Access-Control-Allow-Credentials', 'true')
         return JsonResponse
     
