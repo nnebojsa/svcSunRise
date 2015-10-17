@@ -4,7 +4,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <title>Sunrise \& Sunset</title>
       <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />
    </head>
    <body>
       <div id="page">
@@ -19,7 +19,7 @@
          <script type="text/javascript">
             function test(ort){
             
-            	$.getJSON('http://localhost:8080/SunSetRise?address=' + ort, function(data) {
+            	$.getJSON('http://localhost:28081/SunSetRise?address=' + ort, function(data) {
             
                     var output='';
             	
