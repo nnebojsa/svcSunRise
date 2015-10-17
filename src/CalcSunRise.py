@@ -118,7 +118,7 @@ def Sonnenauf_untergang (JD, Zeitzone, LAT, LNG):
     return AM, UM
 
 def Ausgabe_Sonnenauf_untergang(vLAT, vLNG):
-    
+    '''
     print("Heute ist der {0:02d}.{1:02d}.{2:4d}".format(lt_tag, lt_monat, lt_jahr))
     
     if lt_dst == 1:
@@ -127,7 +127,7 @@ def Ausgabe_Sonnenauf_untergang(vLAT, vLNG):
         print("Winterzeit")
     else:
         print("Keine Sommerzeitinformation vorhanden")
-        
+    '''
     AM, UM = Sonnenauf_untergang (JulianischesDatum(lt_jahr, lt_monat, lt_tag, 12, 0, 0), lt_dst + 1, vLAT, vLNG)
     
     AMh = int(math.floor(AM))
@@ -145,4 +145,6 @@ def Ausgabe_Sonnenauf_untergang(vLAT, vLNG):
     return ausgabe
 
 if __name__ == '__main__':
-    print Ausgabe_Sonnenauf_untergang(LAT,LNG)
+    
+    pass
+    #print Ausgabe_Sonnenauf_untergang(LAT,LNG)
