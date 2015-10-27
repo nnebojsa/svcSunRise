@@ -55,6 +55,8 @@ class SunSetRise:
         web.header('Access-Control-Allow-Origin', '*')
         web.header('Access-Control-Allow-Credentials', 'true')
         
+        print JsonResponse
+        
         return JsonResponse
     
 if __name__ == "__main__":
